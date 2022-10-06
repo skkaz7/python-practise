@@ -20,3 +20,4 @@ new_dict = {
 print(new_dict[123456789])
 
 # https://pl.wikipedia.org/wiki/Tablica_mieszaj%C4%85ca
+# https://www.algorytm.edu.pl/matura-informatyka/zlozonosc-algorytmu
