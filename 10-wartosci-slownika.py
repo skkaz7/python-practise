@@ -15,3 +15,5 @@ for key in dic.keys():
 print(True if 4 in dic.values() else False)
 
 # https://www.programiz.com/python-programming/methods/dictionary/values
+
+print(sum(dic.values()))
