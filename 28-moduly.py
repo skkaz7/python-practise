@@ -14,3 +14,5 @@ def wydrukuj_imie(imie):
 wydrukuj_imie("Marta")
 wydrukuj_imie_z_drukarki("Marta")
 ksero("można, jeszcze jak!")
+
+# https://github.com/martapotockapython/50_pytan/blob/master/28-29_moduly_i_pakiety_prezentacja.pdf
