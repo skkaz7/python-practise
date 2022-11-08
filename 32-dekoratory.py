@@ -15,3 +15,6 @@ def f():
     print('Hello World!')
 
 # https://stackoverflow.com/questions/5929107/decorators-with-parameters
+
+# dekorator -> funkcja, która jako argument pobiera inną funkcję w celu zmiany działania pobranej funkcji lub dodaniu
+# do niej nowych funkcjonalności; udekorowanie pobranej funkcji w nowe właściwości
