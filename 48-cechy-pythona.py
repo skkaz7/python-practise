@@ -11,15 +11,16 @@
 # Brak nawiasów klamrowych {}
 
 # Python jest językiem interpretowanym, nie kompilowanym
-# print("Cześć")
-# print("działam")
-# print(1/0)
-# print("juz nie działam :(")
+print("Cześć")
+print("działam")
+print(1 / 0)
+print("juz nie działam :(")
 
 # Dynamicznie typowany
 # b = 8
 # b = 'osiem'
 
+#  duża ilość bibliotek
 import antigravity  # aby użyć modułu antigravity należy go wcześniej zainstalować (pip install antigravity)
 
 # Wady?
