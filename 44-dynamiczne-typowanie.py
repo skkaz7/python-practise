@@ -24,6 +24,7 @@ print(przeliteruj(1))
 
 # mypy - program, który pozwala analizować kod Pythona pod kątem poprawności przy założeniu statycznego typowania
 # aby go użyć należy w konsoli wpisać: mypy nazwa_pliku_ktory_chcemy_przeanalizoac.pys
+#  python -m mypy .\44-dynamiczne-typowanie.py
 
 # https://docs.python.org/3/library/typing.html
 # https://www.youtube.com/watch?v=2wDvzy6Hgxg
