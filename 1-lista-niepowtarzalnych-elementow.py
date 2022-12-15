@@ -7,8 +7,8 @@ A = [1, 2, 3, 3, 2, 1, 2, 3]
 
 def unique_elements_list(array):
     """
-    :param array: array with unordered elements
-    :return: array with unique elements
+    param array: array with unordered elements
+    return: array with unique elements
     """
     # result = []
     # for element in array:
