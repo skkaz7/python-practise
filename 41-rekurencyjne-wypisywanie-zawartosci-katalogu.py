@@ -17,7 +17,7 @@ def print_directory(directory_path):
             print(element_path)
 
 
-print_directory(r"D:\PyCharm-projects\python-practise\testowy")
+print_directory(r"/home/skkaz7/workspace/python-practise/testowy")
 
 # https://docs.python.org/3/library/os.html
 # https://docs.python.org/3/library/os.path.html

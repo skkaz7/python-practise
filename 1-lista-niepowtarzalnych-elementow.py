@@ -25,7 +25,7 @@ print(unique_elements_list(A))
 
 # zwróć listę na podstawie setu stworzonego na podstawie listy A
 def unique_elements_list_2(array):
-    return list(set(A))
+    return list(set(array))
 
 
 print(unique_elements_list_2(A))
