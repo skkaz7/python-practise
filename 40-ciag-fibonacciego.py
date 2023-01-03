@@ -13,7 +13,8 @@ def fibonacci_r(n):  # O(2 ^ n)
     return fibonacci_r(n - 1) + fibonacci_r(n - 2)
 
 
-print(fibonacci_r(10))
+if __name__ == '__main__':
+    print(fibonacci_r(10))
 
 
 def fibonacci_l(n):  # O(n)
@@ -23,4 +24,5 @@ def fibonacci_l(n):  # O(n)
     return pierwsza
 
 
-print(fibonacci_l(10))
+if __name__ == '__main__':
+    print(fibonacci_l(10))

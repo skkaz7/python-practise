@@ -631,73 +631,95 @@
 
 # Graph
 
-class Graph:
-    def __init__(self, edges):
-        self.edges = edges
-        self.graph_dict = {}
-        for start, end in self.edges:
-            if start in self.graph_dict:
-                self.graph_dict[start].append(end)
-            else:
-                self.graph_dict[start] = [end]
+# class Graph:
+#     def __init__(self, edges):
+#         self.edges = edges
+#         self.graph_dict = {}
+#         for start, end in self.edges:
+#             if start in self.graph_dict:
+#                 self.graph_dict[start].append(end)
+#             else:
+#                 self.graph_dict[start] = [end]
+#
+#         print('Graph dict: ', self.graph_dict)
+#
+#     def get_paths(self, start, end, path=[]):
+#         path = path + [start]
+#
+#         if start == end:
+#             return [path]
+#
+#         if start not in self.graph_dict.keys():
+#             return []
+#
+#         paths = []
+#
+#         for node in self.graph_dict[start]:
+#             if node not in path:
+#                 new_paths = self.get_paths(node, end, path)
+#                 for p in new_paths:
+#                     paths.append(p)
+#
+#         return paths
+#
+#     def get_shortest_path(self, start, end, path=[]):
+#         path = path + [start]
+#
+#         if start == end:
+#             return path
+#
+#         if start not in self.graph_dict.keys():
+#             return None
+#
+#         shortest_path = None
+#
+#         for node in self.graph_dict[start]:
+#             if node not in path:
+#                 new_shortest_path = self.get_shortest_path(node, end, path)
+#                 if new_shortest_path:
+#                     if shortest_path is None or len(new_shortest_path) < len(shortest_path):
+#                         shortest_path = new_shortest_path
+#
+#         return shortest_path
+#
+#
+# if __name__ == '__main__':
+#     routes = [
+#         ("Mumbai", "Paris"),
+#         ("Mumbai", "Dubai"),
+#         ("Paris", "Dubai"),
+#         ("Paris", "New York"),
+#         ("Dubai", "New York"),
+#         ("New York", "Toronto"),
+#     ]
+#
+#     route_graph = Graph(routes)
+#
+#     departure = 'Mumbai'
+#     arrival = 'New York'
+#
+#     print(f'Paths between {departure} and {arrival}: ', route_graph.get_paths(departure, arrival))
+#
+#     print(f'Shortest path between {departure} and {arrival}: ', route_graph.get_shortest_path(departure, arrival))
 
-        print('Graph dict: ', self.graph_dict)
 
-    def get_paths(self, start, end, path=[]):
-        path = path + [start]
+# Recursion example
 
-        if start == end:
-            return [path]
-
-        if start not in self.graph_dict.keys():
-            return []
-
-        paths = []
-
-        for node in self.graph_dict[start]:
-            if node not in path:
-                new_paths = self.get_paths(node, end, path)
-                for p in new_paths:
-                    paths.append(p)
-
-        return paths
-
-    def get_shortest_path(self, start, end, path=[]):
-        path = path + [start]
-
-        if start == end:
-            return path
-
-        if start not in self.graph_dict.keys():
-            return None
-
-        shortest_path = None
-
-        for node in self.graph_dict[start]:
-            if node not in path:
-                new_shortest_path = self.get_shortest_path(node, end, path)
-                if new_shortest_path:
-                    if shortest_path is None or len(new_shortest_path) < len(shortest_path):
-                        shortest_path = new_shortest_path
-
-        return shortest_path
+def find_sum(n):
+    if n == 1:
+        return 1
+    return n + find_sum(n - 1)
 
 
 if __name__ == '__main__':
-    routes = [
-        ("Mumbai", "Paris"),
-        ("Mumbai", "Dubai"),
-        ("Paris", "Dubai"),
-        ("Paris", "New York"),
-        ("Dubai", "New York"),
-        ("New York", "Toronto"),
-    ]
+    print(find_sum(5))
 
-    route_graph = Graph(routes)
 
-    departure = 'Mumbai'
-    arrival = 'New York'
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
 
-    print(f'Paths between {departure} and {arrival}: ', route_graph.get_paths(departure, arrival))
 
-    print(f'Shortest path between {departure} and {arrival}: ', route_graph.get_shortest_path(departure, arrival))
+if __name__ == '__main__':
+    print(fib(6))
